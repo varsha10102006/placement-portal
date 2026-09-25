@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  cursor: pointer;
+  color: #1e3a8a;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons button {
+  border: none;
+  background: transparent;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+.nav-buttons button:hover {
+  color: #1e3a8a;
+}
+
+/* HOME */
+
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.start-btn {
+  margin-top: 30px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  background: #1e3a8a;
+  color: white;
+  font-size: 16px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 60px;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* LOGIN / REGISTER */
+
+.login-container {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  width: 380px;
+  padding: 35px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.login-card h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-card label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.password-box {
+  position: relative;
+  width: 100%;
+}
+
+.password-box input {
+  padding-right: 45px;
+}
+
+.eye-btn {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eye-btn:hover {
+  color: #1e3a8a;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #1e3a8a;
+  color: white;
+  font-size: 16px;
+}
+
+.switch-text {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+
+.switch-text button {
+  border: none;
+  background: none;
+  color: #1e3a8a;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* DASHBOARD */
+
+.dashboard {
+  padding: 50px 60px;
+  text-align: center;
+}
+
+.dashboard-header {
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.dashboard-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.dashboard-card {
+  width: 280px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.dashboard-card h3 {
+  margin-bottom: 10px;
+}
+
+.dashboard-card p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.dashboard-card button,
+.quiz-card button,
+.job-card button,
+.resume-card button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #1e3a8a;
+  color: white;
+}
+
+.back-home-btn {
+  margin-top: 30px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #333;
+  color: white;
+}
+
+/* APTITUDE */
+
+.quiz-container {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-card {
+  width: 550px;
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.quiz-card h2 {
+  margin: 20px 0;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.options button {
+  padding: 13px;
+  background: white;
+  color:#333;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: left;
+  font-size:16px;
+}
+
+.options button:hover {
+  background: #f0f4ff;
+}
+
+.options .selected-option {
+  background: #dbe5ff;
+  color:#1e3a8a;
+  border-color: #1e3a8a;
+}
+
+.next-btn {
+  margin-top: 25px;
+}
+
+.next-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.back-btn {
+  margin-left: 10px;
+  background: #555 !important;
+}
+
+/* JOB TRACKER */
+
+.job-container {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.job-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h1 {
+  margin-bottom: 25px;
+}
+
+.job-card input,
+.job-card select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color:#333;
+  background:white;
+  font-size:16px;
+}
+
+.jobs-list {
+  margin-top: 35px;
+}
+
+.job-item {
+  background: white;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.job-item h3 {
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+
+/* RESUME */
+
+.resume-container {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.resume-card {
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.resume-card h1 {
+  margin-bottom: 15px;
+}
+
+.resume-card textarea {
+  width: 100%;
+  height: 250px;
+  margin: 25px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.skills-result {
+  margin-top: 30px;
+}
+
+.skill {
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 5px;
+  background: #e8eefc;
+  color: #1e3a8a;
+  border-radius: 20px;
+}
+
+.no-skills {
+  margin-top: 20px;
+  color: #777;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .login-card {
+    width: 90%;
+  }
+
+  .quiz-card {
+    width: 90%;
+  }
+
+  .dashboard {
+    padding: 35px 20px;
+  }
+}
